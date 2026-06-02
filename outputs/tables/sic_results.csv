@@ -1,0 +1,12 @@
+quantity,value_um,note
+d_independent_10deg,7.4449,invariance diagnostic
+d_independent_15deg,7.3915,invariance diagnostic
+bootstrap_10deg_ci95_lo,7.4221,"wild bootstrap, seed=20260601"
+bootstrap_10deg_ci95_hi,7.4571,"wild bootstrap, seed=20260601"
+bootstrap_15deg_ci95_lo,7.3667,"wild bootstrap, seed=20260601"
+bootstrap_15deg_ci95_hi,7.4153,"wild bootstrap, seed=20260601"
+cross_angle_diff,0.0533,|d10-d15| (consistency)
+d_joint_reported,7.4051,SHARED-d joint fit (reported thickness)
+jacobian_sigma_d,0.0068,conditional std uncertainty
+bootstrap_ci95_lo,7.3898,"wild bootstrap, seed=20260601"
+bootstrap_ci95_hi,7.4112,"wild bootstrap, seed=20260601"

@@ -1,0 +1,9 @@
+quantity,value,unit,note
+chosen_model,none,,baseline: no empirical HF correction; conservative conditional reporting model
+d_chosen,4.3048,um,conditional on baseline Si stack
+jacobian_sigma_d,0.0055,um,conditional std uncertainty
+oxide_thickness_fit,12.0,nm,nuisance estimate reaches upper bound; do not report as validated oxide thickness
+candidate_d_range,0.1326,um,"range across ablation candidates, including sensitivity-only empirical placements"
+faithful_real_correction_removal_shift,45.3,nm,reference implements subtraction from Re(epsilon)
+imag_correction_removal_shift,87.3,nm,sensitivity-only Im(epsilon) placement
+replacement_status,not established,,reflectance-level alternatives remain sensitivity comparators; thickness-jitter knob reaches upper bound

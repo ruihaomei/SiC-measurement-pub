@@ -1,0 +1,8 @@
+# Exact direct-dependency versions used for release-candidate verification on 2026-06-02.
+# Install requirements.txt for supported use; use this file when recreating the verified direct stack.
+numpy==1.26.4
+scipy==1.13.1
+pandas==2.3.2
+matplotlib==3.10.5
+openpyxl==3.1.5
+pytest==7.4.4

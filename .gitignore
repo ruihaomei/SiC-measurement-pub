@@ -1,0 +1,27 @@
+# macOS / editor metadata
+.DS_Store
+.vscode/
+.idea/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+build/
+*.egg-info/
+
+# Local runtime state
+*.log
+.Rhistory
+
+# LibreOffice / Office lock and temp files
+~$*
+.~lock.*#

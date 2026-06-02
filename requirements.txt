@@ -1,0 +1,7 @@
+# Core numerical reproducibility environment for MEAS-D-26-04372
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+matplotlib>=3.7
+openpyxl>=3.1        # read 附件*.xlsx
+pytest>=7.4          # test suite

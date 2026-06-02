@@ -1,0 +1,6 @@
+component,type,value_um,note
+fitting (Jacobian conditional std),A/conditional,0.0068,cov=s^2(JTJ)^-1
+fitting (bootstrap half-width),A/conditional,0.0107,wild bootstrap 95%
+model-choice (band+resolution),B/sensitivity,0.0596,range over band x subsample grid
+cross-angle consistency (half-range),diagnostic,0.0267,NOT added; invariance check
+optical-model-form / instrument / sample,UNASSESSED,NA,no independent reference; not a full GUM budget

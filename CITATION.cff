@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the associated manuscript and this repository."
+title: "Model-adequacy–guided infrared reflectance thickness metrology — reproducibility package (MEAS-D-26-04372)"
+type: software
+# TODO (author, before public release): complete the FULL manuscript author list in publication order
+# and add any known ORCIDs.
+authors:
+  - family-names: "Mei"
+    given-names: "Ruihao"
+license: MIT
+repository-code: "https://github.com/ruihaomei/SiC-measurement"
+version: "1.0.0"
+keywords:
+  - infrared reflectance
+  - thickness metrology
+  - transfer-matrix method
+  - two-beam model
+  - model adequacy
+  - uncertainty quantification
+  - silicon carbide
+  - reproducibility
+# TODO (author, after acceptance): add the final article citation and DOI.

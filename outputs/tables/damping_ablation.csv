@@ -1,0 +1,7 @@
+mechanism,n_params,d_um,sigma_d_um,mse,aicc,bic,heldout_mse,kappa_JTJ,mechanism_knob,knob_value,knob_at_bound,correction_placement
+none,6,4.3048,0.0055,0.0012518,-30490.1,-30451.6,0.0002844,7.81e+15,,,no,not applicable
+empirical_real_correction,8,4.3501,0.0073,0.0009599,-31697.8,-31646.5,0.0003097,5.68e+15,B_damp,0.8,yes,"Re(epsilon), faithful to reference implementation"
+empirical_imag_sensitivity,8,4.2175,0.0081,0.0008786,-32101.7,-32050.3,0.0003208,6.29e+15,B_damp,0.8,yes,"Im(epsilon), sensitivity only"
+angle_avg,7,4.305,0.0102,0.0012517,-30488.5,-30443.5,0.0002844,7.87e+15,angle_sigma_deg,2.0,yes,not applicable
+thick_avg,7,4.3044,0.0056,0.0012395,-30533.0,-30488.0,0.0002809,9.10e+15,d_jitter_um,0.3,yes,not applicable
+roughness,7,4.3048,0.0048,0.0012518,-30488.1,-30443.2,0.0002844,7.80e+15,roughness_nm,3e-06,yes,not applicable

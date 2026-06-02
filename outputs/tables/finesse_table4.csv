@@ -1,0 +1,5 @@
+dataset,material,angle_deg,diagnostic_kind,band_cm1,measured_F_line,measured_FSR_cm1,measured_FWHM_cm1,measured_n_peaks,model_F_line,model_FSR_cm1,model_FWHM_cm1,model_n_peaks,model_source
+SiC_10deg,SiC,10.0,lineshape_observable_FSR_over_FWHM,1500-4000,2.28338,242.344,106.133894,4,nan,nan,nan,2,independent-angle SiC MDF Airy fit
+SiC_15deg,SiC,15.0,lineshape_observable_FSR_over_FWHM,1500-4000,2.204771,241.2995,109.444261,3,2.289638,240.3355,104.966602,3,independent-angle SiC MDF Airy fit
+Si_10deg,Si,10.0,lineshape_observable_FSR_over_FWHM,1500-4000,2.264347,427.999,189.016505,5,2.986002,477.2955,159.844339,5,joint-angle Si baseline Abeles fit without empirical HF correction
+Si_15deg,Si,15.0,lineshape_observable_FSR_over_FWHM,1500-4000,2.205344,428.48125,194.292258,5,2.987828,477.89825,159.948357,5,joint-angle Si baseline Abeles fit without empirical HF correction
