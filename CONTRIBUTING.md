@@ -7,7 +7,8 @@ reproducibility**, so the bar for changes that alter any reported scientific val
 
 ## Reporting issues
 
-Please open a GitHub issue for:
+Please report reproducibility issues to the corresponding author, Elsaid M. M. Zahran
+(`Elsaid.Zahran@nottingham.edu.cn`), including:
 
 - a reproduction step that fails or is unclear;
 - a discrepancy between a reported value and what the code produces;
@@ -18,12 +19,11 @@ Include the exact command, the full error output, and your platform.
 
 ## Proposing changes
 
-1. Fork and create a feature branch.
-2. Keep changes focused and well-described.
-3. Run `pytest tests/` and ensure all tests pass.
-4. If you touch any analysis code, explain the scientific effect and update `outputs/manifest.json`
+1. Work from a copy of the archived release and keep changes focused and well-described.
+2. Run `pytest tests/` and ensure all tests pass.
+3. If you touch any analysis code, explain the scientific effect and update `outputs/manifest.json`
    provenance if values change. **Do not hand-edit generated outputs to match a desired number.**
-5. Open a pull request describing the motivation and the verification you ran.
+4. Send the corresponding author a description of the motivation, changed files, and verification run.
 
 ## Scientific-integrity rules
 

@@ -1,6 +1,11 @@
-MIT License
+SOFTWARE LICENSE (MIT)
 
-Copyright (c) 2026 Ruihao Mei
+Copyright (c) 2026 Ruihao Mei, Omar Elsaid Zahran, Elsaid M. M. Zahran,
+and Yuchan Ko
+
+This MIT License applies to the analysis software and associated software
+documentation in `src/`, `scripts/`, `tests/`, `.github/`, `pyproject.toml`,
+`requirements.txt`, and `requirements-validated.txt`.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,9 +27,14 @@ SOFTWARE.
 
 ---
 
-DATA LICENSE
-The measured infrared reflectance spectra under `data/raw/` (附件1–4.xlsx) and
-the generated research outputs under `outputs/` are released under the Creative
-Commons Attribution 4.0 International License (CC BY 4.0):
+DATA AND RESEARCH-OUTPUT LICENCE (CC BY 4.0)
+
+Copyright (c) 2026 Ruihao Mei, Omar Elsaid Zahran, Elsaid M. M. Zahran,
+and Yuchan Ko
+
+The four measured infrared reflectance spectra under `data/raw/`, the generated
+research outputs under `outputs/`, and the descriptive documentation
+outside the software scope above are released under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0):
 https://creativecommons.org/licenses/by/4.0/. If you use these materials,
 please cite the associated manuscript (see CITATION.cff).

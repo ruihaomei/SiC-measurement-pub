@@ -1,8 +1,8 @@
-"""Data loading for the four spectra (附件1-4). Reflectance returned as a fraction in [0,~1].
+"""Data loading for the four measured spectra. Reflectance returned as a fraction in [0,~1].
 
-Mapping (confirmed in planning audit):
-  附件1 = SiC 10deg, 附件2 = SiC 15deg, 附件3 = Si 10deg, 附件4 = Si 15deg.
-Columns: '波数 (cm-1)', '反射率 (%)'. 附件2 contains values >100% (calibration artefact) -- see
+Filename mapping is explicit in ``SPECTRA`` below.
+Columns: '波数 (cm-1)', '反射率 (%)'. The SiC 15-degree spectrum contains values >100%
+(a calibration artefact) -- see
 ``load_spectrum`` percent handling.
 """
 import os
@@ -14,10 +14,10 @@ _REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW_DIR = os.path.join(_REPO_ROOT, "data", "raw")
 
 DATASETS = {
-    "SiC_10deg": dict(file="附件1.xlsx", material="SiC", angle_deg=10.0),
-    "SiC_15deg": dict(file="附件2.xlsx", material="SiC", angle_deg=15.0),
-    "Si_10deg":  dict(file="附件3.xlsx", material="Si",  angle_deg=10.0),
-    "Si_15deg":  dict(file="附件4.xlsx", material="Si",  angle_deg=15.0),
+    "SiC_10deg": dict(file="SiC_10deg_reflectance.xlsx", material="SiC", angle_deg=10.0),
+    "SiC_15deg": dict(file="SiC_15deg_reflectance.xlsx", material="SiC", angle_deg=15.0),
+    "Si_10deg":  dict(file="Si_10deg_reflectance.xlsx", material="Si",  angle_deg=10.0),
+    "Si_15deg":  dict(file="Si_15deg_reflectance.xlsx", material="Si",  angle_deg=15.0),
 }
 
 

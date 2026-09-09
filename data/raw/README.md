@@ -5,10 +5,10 @@ reproduction scripts.
 
 | File | Material | Incidence angle | Columns |
 |---|---|---|---|
-| `附件1.xlsx` | SiC epilayer | 10 degrees | `波数 (cm-1)`, `反射率 (%)` |
-| `附件2.xlsx` | SiC epilayer | 15 degrees | `波数 (cm-1)`, `反射率 (%)` |
-| `附件3.xlsx` | Si epilayer | 10 degrees | `波数 (cm-1)`, `反射率 (%)` |
-| `附件4.xlsx` | Si epilayer | 15 degrees | `波数 (cm-1)`, `反射率 (%)` |
+| `SiC_10deg_reflectance.xlsx` | SiC epilayer | 10 degrees | `波数 (cm-1)`, `反射率 (%)` |
+| `SiC_15deg_reflectance.xlsx` | SiC epilayer | 15 degrees | `波数 (cm-1)`, `反射率 (%)` |
+| `Si_10deg_reflectance.xlsx` | Si epilayer | 10 degrees | `波数 (cm-1)`, `反射率 (%)` |
+| `Si_15deg_reflectance.xlsx` | Si epilayer | 15 degrees | `波数 (cm-1)`, `反射率 (%)` |
 
 The released workbooks are sanitized copies. `scripts/sanitize_xlsx_metadata.py` removes non-scientific
 Excel source-path and author metadata while preserving worksheet cell values. Released-workbook SHA-256

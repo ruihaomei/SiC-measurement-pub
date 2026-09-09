@@ -2,7 +2,7 @@
 """Decisive real-data test: two-beam vs Airy thickness for SiC, SAME MDF dielectric model.
 
 This isolates the *model-form* effect (two-beam truncation vs exact Airy) on the recovered SiC thickness,
-fitting the identical MDF/L-STC+Drude optical response under each forward model on the real 附件1/附件2 data.
+fitting the identical MDF/L-STC+Drude optical response under each forward model on the real 10°/15° SiC data.
 
 Why this matters (P0-B / central SiC claim): the revision states that replacing two-beam with multi-beam
 shifts SiC thickness by ~0.293 um (3.8%). If that shift were a genuine multi-beam-physics effect, fitting
@@ -96,7 +96,7 @@ def main():
         claim_id="SIC_TWO_BEAM_VS_AIRY_REAL",
         description="Two-beam vs Airy SiC thickness at fixed MDF model on real data; diff few nm; fringe |q|~0.002",
         value=f"diff {rows[0]['diff_nm']} nm (10deg), {rows[1]['diff_nm']} nm (15deg)",
-        input_data="data/raw/附件1.xlsx, 附件2.xlsx",
+        input_data="data/raw/SiC_10deg_reflectance.xlsx, SiC_15deg_reflectance.xlsx",
         script="scripts/sic_two_beam_vs_airy_realdata.py",
         output_file="outputs/tables/sic_two_beam_vs_airy_realdata.csv",
         seed=None,

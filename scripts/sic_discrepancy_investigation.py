@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """P0 discrepancy investigation: where does the SiC 0.293 um (3.8%) two-beam->multi-beam shift come from?
 
-We compare, on the real SiC data (附件1/附件2), a ladder of forward models that progressively add the
+We compare, on the real 10°/15° SiC data, a ladder of forward models that progressively add the
 ingredients present in the original multi-beam fit (V5_3.py) but absent from the two-beam baseline:
 
   M0  two-beam, semi-infinite substrate (front epi interface only, truncated)        [baseline]
@@ -157,7 +157,7 @@ def main():
         claim_id="SIC_DISCREPANCY_LADDER",
         description="Model ladder isolating the origin of the SiC two-beam->multi-beam thickness shift",
         value="see CSV (M0->M1 pure model-form vs M0->M3 with finite-substrate+averaging)",
-        input_data="data/raw/附件1.xlsx, 附件2.xlsx",
+        input_data="data/raw/SiC_10deg_reflectance.xlsx, SiC_15deg_reflectance.xlsx",
         script="scripts/sic_discrepancy_investigation.py",
         output_file="outputs/tables/sic_discrepancy_ladder.csv",
         seed=None,

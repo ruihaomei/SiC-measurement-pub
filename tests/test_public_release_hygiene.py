@@ -29,7 +29,7 @@ def test_source_commit_has_export_fallback(monkeypatch):
 
 
 def test_workbook_sanitizer_is_idempotent(tmp_path):
-    source = REPO / "data" / "raw" / "附件1.xlsx"
+    source = REPO / "data" / "raw" / "SiC_10deg_reflectance.xlsx"
     workbook = tmp_path / source.name
     shutil.copyfile(source, workbook)
     before = workbook.read_bytes()

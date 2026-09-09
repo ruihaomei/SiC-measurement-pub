@@ -47,10 +47,10 @@ Map of the public reproducibility package.
 │   └── raw/                  Measured spectra (CC BY 4.0)
 │       ├── README.md          Data dictionary + sanitation note
 │       ├── SHA256SUMS         Released-workbook checksums
-│       ├── 附件1.xlsx        SiC 10°
-│       ├── 附件2.xlsx        SiC 15°
-│       ├── 附件3.xlsx        Si 10°
-│       └── 附件4.xlsx        Si 15°
+│       ├── SiC_10deg_reflectance.xlsx        SiC 10°
+│       ├── SiC_15deg_reflectance.xlsx        SiC 15°
+│       ├── Si_10deg_reflectance.xlsx        Si 10°
+│       └── Si_15deg_reflectance.xlsx        Si 15°
 │
 ├── outputs/                  Generated artifacts (regenerable; see REPRODUCIBILITY.md)
 │   ├── tables/               CSV tables (13 generated files)

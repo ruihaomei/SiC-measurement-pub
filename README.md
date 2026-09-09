@@ -2,11 +2,11 @@
 
 Reproducibility package for the manuscript:
 
-> **"Model-adequacy–guided infrared reflectance thickness metrology: diagnosing two-beam breakdown and
-> robust multi-beam inversion with uncertainty"** — *Measurement* (Elsevier), manuscript **MEAS-D-26-04372**
-> (under review).
+> **"Model-adequacy–guided infrared reflectance thickness metrology: separating two-beam truncation
+> error, model-choice sensitivity, and conditional uncertainty"** — *Measurement* (Elsevier), manuscript
+> **MEAS-D-26-04372** (in revision).
 
-This repository contains the code, measured data, numerical outputs, and tests for the reported model-
+This archived release contains the code, measured data, numerical outputs, and tests for the reported model-
 adequacy studies and headline thickness results. It is designed so that a new researcher can regenerate the
 released tables and figures **without contacting the authors**.
 
@@ -53,7 +53,7 @@ src/            Reproduction library (importable package)
   reference_params.py  SiC-like / Si-like "truth" systems for synthetic studies
 scripts/        Reproduction entry points (see §6)
 tests/          pytest suite (limits, units, finesse consistency, manifest/CSV checks, release hygiene)
-data/raw/       Measured spectra 附件1–4.xlsx (SiC 10°/15°, Si 10°/15°)  [CC BY 4.0]
+data/raw/       Descriptively named measured spectra (SiC 10°/15°, Si 10°/15°)  [CC BY 4.0]
 outputs/        Generated tables/, figures/, bootstrap/, logs/, and manifest.json
 docs/provenance/ Human-readable provenance notes; outputs/manifest.json is the machine-readable record
 ```
@@ -65,8 +65,10 @@ A detailed map is in [`REPOSITORY_STRUCTURE.md`](REPOSITORY_STRUCTURE.md).
 Requires **Python ≥ 3.10**.
 
 ```bash
-git clone https://github.com/ruihaomei/SiC-measurement.git
-cd SiC-measurement
+# Download sic-ir-reflectance-metrology-reproducibility-v1.0.0.zip from:
+# https://doi.org/10.5281/zenodo.20556659
+unzip sic-ir-reflectance-metrology-reproducibility-v1.0.0.zip
+cd sic-ir-reflectance-metrology-v1.0.0
 python -m venv .venv && source .venv/bin/activate    # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
@@ -120,10 +122,10 @@ FTIR with a variable-angle specular reflectance accessory; gold-mirror reference
 
 | File | Material | Incidence angle |
 |---|---|---|
-| `附件1.xlsx` | SiC epilayer | 10° |
-| `附件2.xlsx` | SiC epilayer | 15° |
-| `附件3.xlsx` | Si epilayer | 10° |
-| `附件4.xlsx` | Si epilayer | 15° |
+| `SiC_10deg_reflectance.xlsx` | SiC epilayer | 10° |
+| `SiC_15deg_reflectance.xlsx` | SiC epilayer | 15° |
+| `Si_10deg_reflectance.xlsx` | Si epilayer | 10° |
+| `Si_15deg_reflectance.xlsx` | Si epilayer | 15° |
 
 Each file has two columns: wavenumber `波数 (cm-1)` and reflectance `反射率 (%)`. Reflectance is stored in
 percent and converted to a fraction for analysis (`src/io_data.py`). The SiC 15° spectrum contains a few
@@ -168,9 +170,10 @@ run offline in seconds.
 
 ## 12. Citation
 
-If you use this code or data, please cite the manuscript. Machine-readable metadata is in
-[`CITATION.cff`](CITATION.cff). The manuscript is currently under review; the citation will be updated with
-the final volume/DOI upon publication.
+If you use this code or data, please cite the archived release at
+[`https://doi.org/10.5281/zenodo.20556659`](https://doi.org/10.5281/zenodo.20556659) and the associated
+manuscript. Machine-readable metadata is in [`CITATION.cff`](CITATION.cff). The manuscript is currently
+under review; its citation can be updated with the final volume and article DOI after publication.
 
 ## 13. License
 

@@ -173,7 +173,7 @@ def main():
         dict(
             claim_id="FINESSE_TABLE4_REALDATA",
             description="Measured and fitted-spectrum lineshape finesse FSR/FWHM on the explicit fringe band",
-            value="see CSV", input_data="data/raw/附件1.xlsx, 附件2.xlsx, 附件3.xlsx, 附件4.xlsx",
+            value="see CSV", input_data="data/raw/SiC_10deg_reflectance.xlsx, SiC_15deg_reflectance.xlsx, Si_10deg_reflectance.xlsx, Si_15deg_reflectance.xlsx",
             script="scripts/recompute_finesse_tables.py", output_file="outputs/tables/finesse_table4.csv",
             seed=None,
         ),

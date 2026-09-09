@@ -1,15 +1,39 @@
 cff-version: 1.2.0
-message: "If you use this software or data, please cite the associated manuscript and this repository."
+message: "If you use this software or data, please cite the associated manuscript and this archived release."
 title: "Model-adequacy–guided infrared reflectance thickness metrology — reproducibility package (MEAS-D-26-04372)"
 type: software
-# TODO (author, before public release): complete the FULL manuscript author list in publication order
-# and add any known ORCIDs.
+version: "1.0.0"
+date-released: 2026-09-04
+doi: "10.5281/zenodo.20556659"
+url: "https://doi.org/10.5281/zenodo.20556659"
+
+# Author list, order, affiliations, emails, and ORCIDs confirmed by the corresponding author.
 authors:
   - family-names: "Mei"
     given-names: "Ruihao"
+    affiliation: "School of Mathematical Sciences, University of Nottingham Ningbo China, Ningbo, Zhejiang, China"
+    email: "smyrm4@nottingham.edu.cn"
+    orcid: "https://orcid.org/0009-0002-8693-3380"
+  - family-names: "Zahran"
+    given-names: "Omar Elsaid"
+    affiliation: "School of Robotics, Xi'an Jiaotong-Liverpool University, Taicang, Suzhou 215400, China"
+    email: "Omar.Zahran26@student.xjtlu.edu.cn"
+    orcid: "https://orcid.org/0009-0002-9271-3042"
+  - family-names: "Zahran"
+    given-names: "Elsaid M. M."
+    affiliation: "Department of Civil Engineering, Faculty of Science and Engineering, University of Nottingham Ningbo China, 199 Taikang East Road, Ningbo 315100, China"
+    email: "Elsaid.Zahran@nottingham.edu.cn"
+    orcid: "https://orcid.org/0000-0001-9424-2905"
+  - family-names: "Ko"
+    given-names: "Yuchan"
+    affiliation: "Faculty of Engineering, The University of Sydney, Sydney, NSW 2006, Australia"
+    email: "yuko7106@uni.sydney.edu.au"
+    orcid: "https://orcid.org/0009-0001-1464-5606"
+
+# The CFF describes the software component. Data and generated research outputs are CC BY 4.0;
+# the package LICENSE file defines the scope of each licence.
 license: MIT
-repository-code: "https://github.com/ruihaomei/SiC-measurement"
-version: "1.0.0"
+
 keywords:
   - infrared reflectance
   - thickness metrology
@@ -19,4 +43,21 @@ keywords:
   - uncertainty quantification
   - silicon carbide
   - reproducibility
-# TODO (author, after acceptance): add the final article citation and DOI.
+
+preferred-citation:
+  type: article
+  title: "Model-adequacy–guided infrared reflectance thickness metrology: separating two-beam truncation error, model-choice sensitivity, and conditional uncertainty"
+  authors:
+    - family-names: "Mei"
+      given-names: "Ruihao"
+    - family-names: "Zahran"
+      given-names: "Omar Elsaid"
+    - family-names: "Zahran"
+      given-names: "Elsaid M. M."
+    - family-names: "Ko"
+      given-names: "Yuchan"
+  journal: "Measurement"
+  publisher:
+    name: "Elsevier"
+  year: 2026
+  notes: "Manuscript MEAS-D-26-04372, in revision. Volume, pages, and article DOI to be added on acceptance."

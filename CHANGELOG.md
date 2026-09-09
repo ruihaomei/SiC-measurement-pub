@@ -3,7 +3,7 @@
 All notable changes to this reproducibility package are documented here. This project adheres loosely to
 [Keep a Changelog](https://keepachangelog.com/) and [Semantic Versioning](https://semver.org/).
 
-## [v1.0.0] — 2026-06-02 (public release candidate)
+## [v1.0.0] — 2026-09-04
 
 First public reproducibility release accompanying *Measurement* manuscript MEAS-D-26-04372.
 
@@ -21,7 +21,7 @@ First public reproducibility release accompanying *Measurement* manuscript MEAS-
   filesystems.
 - Removed non-scientific Excel source-path metadata from the four measured spectra and added an automated
   release-hygiene test.
-- Added export-safe provenance handling for GitHub ZIP and `git archive` downloads.
+- Added export-safe provenance handling for archive downloads and `git archive` exports.
 - Fixed Python package discovery so wheels include all `src` subpackages.
 
 ### Notes

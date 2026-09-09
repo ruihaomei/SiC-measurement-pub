@@ -5,7 +5,7 @@ The canonical reference implementation subtracts a real-valued saturating-log te
 revision documents called it Im(eps) damping. We preserve the implemented real correction, add an explicit
 imaginary-placement sensitivity case, and compare both against simpler reflectance-level alternatives.
 
-  1. Fit the Si stack to the real 附件3/附件4 data under six high-frequency mechanisms on the SAME data/
+  1. Fit the Si stack to the real 10°/15° Si data under six high-frequency mechanisms on the SAME data/
      objective: none, empirical_real_correction (faithful reference), empirical_imag_sensitivity (audit only),
      angle_avg, thick_avg, and roughness (reflectance-level alternatives).
   2. For each: recovered epilayer thickness d, MSE, AICc/BIC, parameter count, held-out-band prediction
@@ -291,20 +291,20 @@ def main():
         dict(claim_id="DAMPING_ABLATION",
              description="Si empirical HF-correction audit: faithful Re(epsilon), Im(epsilon) sensitivity, and reflectance-level alternatives",
              value=f"faithful Re(epsilon) correction removal shifts d by {shift_real_nm:.1f} nm",
-             input_data="data/raw/附件3.xlsx, 附件4.xlsx", script="scripts/damping_ablation.py",
+             input_data="data/raw/Si_10deg_reflectance.xlsx, Si_15deg_reflectance.xlsx", script="scripts/damping_ablation.py",
              output_file="outputs/tables/damping_ablation.csv", seed=None),
         dict(claim_id="DAMPING_CORR_MATRIX",
              description="Si faithful Re(epsilon)-correction FULL parameter correlation matrix",
-             value="full matrix saved", input_data="data/raw/附件3.xlsx, 附件4.xlsx",
+             value="full matrix saved", input_data="data/raw/Si_10deg_reflectance.xlsx, Si_15deg_reflectance.xlsx",
              script="scripts/damping_ablation.py", output_file="outputs/tables/damping_corr_matrix.csv", seed=None),
         dict(claim_id="DAMPING_CORR_MATRIX_IMAG_SENSITIVITY",
              description="Si Im(epsilon)-correction sensitivity FULL parameter correlation matrix",
-             value="full sensitivity matrix saved", input_data="data/raw/附件3.xlsx, 附件4.xlsx",
+             value="full sensitivity matrix saved", input_data="data/raw/Si_10deg_reflectance.xlsx, Si_15deg_reflectance.xlsx",
              script="scripts/damping_ablation.py",
              output_file="outputs/tables/damping_corr_matrix_imag_sensitivity.csv", seed=None),
         dict(claim_id="SI_CHOSEN_MODEL",
              description="Conservative Si chosen-model result without empirical HF correction",
-             value=f"{float(chosen_result.x[0]):.4f} um", input_data="data/raw/附件3.xlsx, 附件4.xlsx",
+             value=f"{float(chosen_result.x[0]):.4f} um", input_data="data/raw/Si_10deg_reflectance.xlsx, Si_15deg_reflectance.xlsx",
              script="scripts/damping_ablation.py", output_file="outputs/tables/si_results.csv", seed=None),
     ])
     log("Study C complete.")
